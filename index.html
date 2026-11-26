@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="高泽乾课题组（Gao Lab）— 依托山东大学齐鲁医院血液科，介绍 PI、研究方向、团队成员与论文成果">
+  <title>高泽乾课题组</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text" id="brand-name">实验室</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">实验室简介</a>
+        <a href="#pi">PI 介绍</a>
+        <a href="#research">研究方向</a>
+        <a href="#team">团队成员</a>
+        <a href="#publications">论文成果</a>
+        <a href="#news">动态</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="展开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow" id="hero-eyebrow">欢迎来到</p>
+      <h1 id="hero-title">实验室名称</h1>
+      <p class="hero-title-en" id="hero-title-en"></p>
+      <p class="hero-subtitle" id="hero-subtitle">实验室简介一句话，介绍研究方向与特色。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#pi">认识 PI</a>
+        <a class="btn btn-outline" href="#publications">查看成果</a>
+      </div>
+      <dl class="stats" id="stats"></dl>
+    </div>
+  </section>
+
+  <!-- 简介 -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div>
+        <p class="section-kicker">ABOUT US</p>
+        <h2>实验室简介</h2>
+        <div class="prose" id="about-text"></div>
+      </div>
+      <aside class="info-card" aria-label="实验室速览">
+        <h3>实验室速览</h3>
+        <dl id="quick-info"></dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PI 介绍 -->
+  <section class="section section-alt" id="pi">
+    <div class="container">
+      <p class="section-kicker">PRINCIPAL INVESTIGATOR</p>
+      <h2>PI 介绍</h2>
+      <div class="pi-layout" id="pi-layout"></div>
+      <div class="faculty-wrap" id="faculty-wrap"></div>
+    </div>
+  </section>
+
+  <!-- 研究方向 -->
+  <section class="section" id="research">
+    <div class="container">
+      <p class="section-kicker">RESEARCH</p>
+      <h2>研究方向</h2>
+      <p class="section-lead">聚焦关键科学问题，开展跨学科研究。</p>
+      <div class="card-grid" id="research-grid"></div>
+    </div>
+  </section>
+
+  <!-- 团队成员 -->
+  <section class="section" id="team">
+    <div class="container">
+      <p class="section-kicker">PEOPLE</p>
+      <h2>团队成员</h2>
+      <p class="section-lead">一群对研究充满热情的人。</p>
+      <div id="team-lead"></div>
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+  </section>
+
+  <!-- 论文成果 -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <p class="section-kicker">PUBLICATIONS</p>
+      <h2>论文成果</h2>
+      <p class="section-lead">近期发表的代表性论文。</p>
+      <div class="filters" id="pub-filters" role="group" aria-label="按年份筛选"></div>
+      <ol class="pub-list" id="pub-list"></ol>
+      <p class="more-note" id="pub-note"></p>
+    </div>
+  </section>
+
+  <!-- 动态 -->
+  <section class="section" id="news">
+    <div class="container">
+      <p class="section-kicker">NEWS</p>
+      <h2>实验室动态</h2>
+      <div class="news-list" id="news-list"></div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="section-kicker">CONTACT</p>
+        <h2>联系我们</h2>
+        <p class="section-lead">欢迎交流合作，也欢迎有志于科研的同学加入。</p>
+        <div class="contact-lines" id="contact-lines"></div>
+      </div>
+      <div class="join-card">
+        <h3>加入我们</h3>
+        <p id="join-text">如果你对我们的研究感兴趣，欢迎随时联系。</p>
+        <a class="btn btn-primary" id="join-link" href="mailto:example@example.com">发送邮件</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footer-text">© 2026 实验室. 保留所有权利。</p>
+      <a href="#top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
